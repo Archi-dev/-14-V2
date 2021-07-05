@@ -1,30 +1,20 @@
-let str = prompt('Введите строку', '');
-let num1 = prompt('Введите число');
-let sym = prompt('Введите символ');
-let bool = prompt('Введите true или false' );
+let str = "Hello";
+let num1 = 5;
+let sym = "*";
+let bool = 'true';
 let sym1 = '';
-switch (true) {
-   case Boolean(str) === false :
-str = undefined;
-  case  Boolean(num1) === false :
-num1 = undefined;
-  case  Boolean(sym) === false :
-sym = undefined;
-  case  Boolean(bool) === false :
-    bool = undefined;
-}
 
 function creatPadString(str, num1, sym, bool) {
     
-    if (str === undefined) {
-        return alert('Не введённая строка');
-    } else if (num1 === undefined){
-return alert('Не введённый номер');
-    } else if (sym === undefined){
-return alert('Не введённый символ');
-    } else if (bool === undefined){
-return alert('Не введённый Bool');
-    }
+    if (!str) {
+        return 'error: не введена строка';
+    } else if (!num1) {
+         return 'error: не введёое число';
+} else if (!sym) {
+         return 'error: не введён символ';
+} else if (!bool) {
+         return 'error: не введён параметр булен';
+}
     let obj = {
         str,
                }
