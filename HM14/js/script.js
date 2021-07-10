@@ -3,7 +3,7 @@ function creatPadString(str, num1, sym = " ", bool = true) {
         return 'error: не введена строка';
     }
     if (!num1) {
-         return 'error: не введёое число';
+         return 'error: не введёное число';
     }
     let sym1 = '';
 
